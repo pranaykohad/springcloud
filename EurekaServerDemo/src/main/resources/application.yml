@@ -1,0 +1,31 @@
+server:
+  port: 8761
+  
+spring:
+  application:
+    name: eureka-server
+    
+eureka: 
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+#zuul:
+#  routes:
+#    flight-service:
+#      url: http://localhost:8081/flight
+#    location-service:
+#      url: http://localhost:8082/location
+  
+   
+#  jpa:
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5Dialect
+#    hibernate:
+#      ddl-auto: update
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/springclouddb?autoReconnect=true&useSSL=false
+#    username: root
+#    password: root
+#    driverClassName: com.mysql.cj.jdbc.Driver 
